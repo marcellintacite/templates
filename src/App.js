@@ -1,34 +1,31 @@
-import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.css'
-import Login from './Components/example';
-import { Route, Routes } from 'react-router-dom';
-import Home from './Components/home';
-import {toast, ToastContainer} from 'react-toastify'
-import { useState } from 'react';
-import 'react-toastify/dist/ReactToastify.css'
-import AddPoem from './Components/ajouterPoeme';
-import Navbar from './Components/navbar';
-import Poemes from './Components/poemes';
-import 'font-awesome/css/font-awesome.css'
+import React, { useState } from "react";
+import Navbar from "./Components/Common/Navbar";
+import "font-awesome/css/font-awesome.css";
+import { Routes, Route } from "react-router-dom";
+import NotFound from "./Components/NotFound";
+import Home from "./Components/Home";
+import ConfigContext from "./Components/context/Dark";
+import { Toaster } from "react-hot-toast";
+import ProjetPage from "./Components/ProjetPage";
 
-function App() {
-  const [isAuth, setIsAuth] = useState(false)
- 
+export default function App() {
+  const [dark, setDark] = useState(false);
   return (
-    <div className='body'>
-      <Navbar isAuth={isAuth}/>
-      <div className="container-fluid">
-          <ToastContainer/>
-          <Routes>
-            <Route path='/' element={<Login setIsAuth = {setIsAuth}/>}/>
-            <Route path='/home' element={<Home/>}/>
-            <Route path='/add' element={<AddPoem isAuth={isAuth}/>}/>
-            <Route path='/poemes' element={<Poemes/>}/>
-          </Routes>
-      </div>
-    </div>
+    <>
+      <ConfigContext.Provider
+        value={{
+          dark,
+          setDark,
+        }}
+      >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projet" element={<ProjetPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Toaster />
+      </ConfigContext.Provider>
+
+    </>
   );
 }
-
-export default App;

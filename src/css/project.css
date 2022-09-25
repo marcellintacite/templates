@@ -1,0 +1,144 @@
+@font-face {
+  font-family: main;
+  src: url("../assets/fonts/Comfortaa.ttf");
+}
+
+@font-face {
+  font-family: second;
+  src: url("../assets/fonts/Righteous-Regular.ttf");
+}
+
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "main";
+}
+
+.projects .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.projects .items .card {
+  width: 280px;
+  background-color: #fff;
+  margin-left: 20px;
+  margin-top: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 10px 10px #edeff0;
+          box-shadow: 1px 10px 10px #edeff0;
+}
+
+.projects .items .card .img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #edeff0;
+}
+
+.projects .items .card .img img {
+  width: 100%;
+}
+
+.projects .items .card .body {
+  width: 100%;
+  padding: 5px;
+}
+
+.projects .items .card .body p {
+  color: #3339;
+}
+
+.projects .items .card .body .tech {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .items .card .body .tech .tech_item {
+  padding: 6px;
+  background-color: #169c94;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.projects .items .card .body .tech .tech_item span {
+  color: #fff;
+  font-size: 12px;
+}
+
+.projects .items .card .foot {
+  width: 100%;
+  padding: 8px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #edeff0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projects .items .card .foot a {
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #9f98e8;
+}
+
+.projects .items .card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.projects.active {
+  background: #333;
+}
+
+.projects.active .items .card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media screen and (max-width: 600px) {
+  .projects .items .card {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=project.css.map */

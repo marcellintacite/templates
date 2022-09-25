@@ -1,0 +1,215 @@
+@font-face {
+  font-family: main;
+  src: url("../assets/fonts/Comfortaa.ttf");
+}
+
+@font-face {
+  font-family: second;
+  src: url("../assets/fonts/Righteous-Regular.ttf");
+}
+
+.projet.active {
+  background: -webkit-gradient(linear, left top, right top, from(#0e1c1b), to(#28273b));
+  background: linear-gradient(90deg, #0e1c1b, #28273b);
+}
+
+.projet {
+  padding: 5px;
+  font-family: "main";
+  background-color: aliceblue;
+}
+
+.projet .title {
+  position: relative;
+}
+
+.projet .title h2 {
+  padding-left: 20px;
+}
+
+.projet .title .tire {
+  position: absolute;
+  width: 100px;
+  bottom: -10px;
+  left: 20px;
+  background-color: #169c94;
+  height: 2px;
+}
+
+.projet .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.projet .items .card {
+  width: 280px;
+  background-color: #fff;
+  margin-left: 25px;
+  border-radius: 10px;
+  font-family: "main";
+  overflow: hidden;
+  -webkit-box-shadow: 1px 10px 10px #edeff0;
+          box-shadow: 1px 10px 10px #edeff0;
+}
+
+.projet .items .card .img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #edeff0;
+}
+
+.projet .items .card .img img {
+  width: 100%;
+}
+
+.projet .items .card .body {
+  width: 100%;
+  padding: 5px;
+}
+
+.projet .items .card .body p {
+  color: #3339;
+}
+
+.projet .items .card .body .tech {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projet .items .card .body .tech .tech_item {
+  padding: 6px;
+  background-color: #169c94;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.projet .items .card .body .tech .tech_item span {
+  color: #fff;
+  font-size: 12px;
+}
+
+.projet .items .card .foot {
+  width: 100%;
+  padding: 8px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #edeff0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projet .items .card .foot a {
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #9f98e8;
+}
+
+.projet .items .card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.projet .link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projet .link .plus {
+  padding: 8px 10px;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #9ee2bd;
+  margin-bottom: 10px;
+}
+
+.projet .link .plus:hover {
+  background: #9ee2bd;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.projet.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.projet.active .items .card {
+  background-color: #333;
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.projet.active .items .card .body p {
+  color: #fff9;
+}
+
+.projet.active .items .card .foot a {
+  color: #fff;
+}
+
+.projet.active .link {
+  padding-bottom: 20px;
+}
+
+.projet.active .link .plus {
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .projet {
+    padding-bottom: 20px;
+  }
+  .projet .items {
+    display: block;
+  }
+  .projet .items .card {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=projet.css.map */

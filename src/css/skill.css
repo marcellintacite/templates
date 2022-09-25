@@ -1,0 +1,121 @@
+@font-face {
+  font-family: main;
+  src: url("../assets/fonts/Comfortaa.ttf");
+}
+
+@font-face {
+  font-family: second;
+  src: url("../assets/fonts/Righteous-Regular.ttf");
+}
+
+.skill {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.skill .title {
+  padding-left: 20px;
+}
+
+.skill .cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.skill .cards .left, .skill .cards .right {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.skill .items h2 {
+  font-weight: 400;
+  letter-spacing: 1;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 16px;
+}
+
+.skill .items .progress-bar {
+  width: 500px;
+  height: 8px;
+  background: #333;
+  border-radius: 5px;
+}
+
+.skill .items .progress-bar div {
+  height: 8px;
+  border-radius: 5px;
+  background: #169c94;
+  width: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.skill .items .progress-bar div span {
+  width: 36px;
+  height: 36px;
+  background: #333;
+  color: #fff;
+  border-radius: 50%;
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skill.active {
+  background: #333;
+  color: #fff;
+  padding: 0;
+}
+
+.skill.active .cards .left, .skill.active .cards .right {
+  border: none;
+  border-radius: 5px;
+}
+
+.skill.active .items h2 {
+  color: #fff;
+}
+
+.skill.active .items .progress-bar {
+  background-color: #edeff0;
+}
+
+@media screen and (max-width: 600px) {
+  .skill .cards {
+    display: block;
+  }
+  .skill .cards .left, .skill .cards .right {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding-bottom: 30px;
+    border-radius: 0;
+    border-left: 0.1px solid #3337;
+  }
+  .skill .cards .left .items h2, .skill .cards .right .items h2 {
+    font-size: 14px;
+  }
+  .skill .cards .left .items .progress-bar, .skill .cards .right .items .progress-bar {
+    width: 100%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=skill.css.map */

@@ -1,0 +1,226 @@
+@import "config";
+
+.container.active {
+    background-color: $dark;
+    position: sticky;
+    top: 0;
+}
+.dark {
+    background-color: $dark;
+    height: 45px;
+
+    .container {
+        background-color: $dark;
+        // .center {
+        //     margin: 20px;
+        // }
+        .right {
+            .responsive {
+                background-color: grey;
+            }
+            ul.active {
+                background-color: $dark;
+            }
+            ul {
+                li {
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo {
+        color: #fff;
+    }
+
+}
+.container {
+    width: 100%;
+    height: 45px;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+    font-family: $font;
+    box-shadow: $shadow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease-in;
+
+    .logo {
+        padding-left: 10px;
+        font-weight: 600;
+        font-size: 16px;
+
+        .text{
+            color: $other;
+        }
+    }
+
+    .center {
+        width: 60px;
+        border-radius: 10px;
+        margin-left: 40px;
+        height: 30px;
+        display: flex;
+        background-color: $lighti;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+        .circle {
+            width: 25px;
+            height: 25px;
+            background: rgb(147, 147, 147);
+            border-radius: 45%;
+            position: absolute;
+            left: 2px;
+            transition: all 0.3s ease-in;
+        }
+        .circle.active {
+           left: 33px;
+        }
+    }
+
+    .right {
+        flex: 1;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.3s ease-in;
+
+        .responsive {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $grey;
+            cursor: pointer;
+            display: none;
+
+            .fa {
+                color: $white;
+            }
+        }
+
+        ul {
+            list-style: none;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                display: inline-block;
+                padding-right: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $dark;
+                    transition: all 0.3s ease;
+                }
+                a:hover {
+                    color: $primaryColor;
+                }
+            }
+        }
+
+        
+    }
+}
+
+@media(max-width:1000px){
+    .container {
+        overflow-x: hidden;
+        .right {
+            flex: 0;
+            ul {
+                display: none;
+            }
+            
+
+            
+            .responsive {
+                display: flex;
+                z-index: 900;
+                margin-right: 10px;
+                transition: all 0.4s ease-in;
+            }
+        }
+    }
+    .container.active {
+        height: 100vh;
+        width: 100%;
+        align-items: unset;
+
+        ul {
+            width: 0;
+
+            li {
+                background: $dark;
+            }
+        }
+
+
+        ul.active {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: $light;
+
+            li {
+                width: 70%;
+                margin-right: 40px;
+                border-radius: 5px;
+                display: block;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: none;
+                border-bottom: 1px solid $primaryColor;
+               
+                cursor: pointer;
+                transition: 0.4s ease-in;
+                
+                a {
+                    color: $white;
+                }
+
+            }
+            li:hover{
+                background-color: $primaryColor;
+            }
+            
+        }
+
+        .right-icons{
+            opacity: 0;
+        }
+
+        .responsive {
+            position: absolute;
+            top: 20px;
+            right: 3px;
+        }
+    }
+}
+
+
+@media(max-width:390px){
+    .container {
+        .logo{
+            font-size: 14px;
+        }
+    }
+}

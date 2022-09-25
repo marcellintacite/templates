@@ -1,9 +1,10 @@
-const Annonce = () => {
+import React from "react";
+
+export default function SideBar() {
   return (
-    <div className="annonce">
-      <h2>Annonces</h2>
+    <div className="sidebar">
+      <h3>Filtres</h3>
+      
     </div>
   );
-};
-
-export default Annonce;
+}

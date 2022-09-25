@@ -1,0 +1,111 @@
+@import 'config';
+
+.projects {
+    width: 100%;
+    min-height: 100vh;
+    font-family: $font;
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content:center;
+        align-items: center;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        
+
+        .card {
+            width: 280px;
+            background-color: $white;
+            margin-left: 20px;
+            margin-top: 25px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 1px 10px 10px $lighti;
+
+            .img {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $lighti;
+                img{
+                    width: 100%;
+                }
+            }
+            .body {
+                width: 100%;
+                padding: 5px;
+
+                p {
+                    color: #3339;
+                }
+
+                .tech {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .tech_item {
+                        padding: 6px;
+                        background-color: $other;
+                        margin-right: 10px;
+                        border-radius: 5px;
+
+                        span {
+                            color: $white;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .foot {
+                width: 100%;
+                padding: 8px;
+                padding-bottom: 10px;
+                display: flex;
+                margin-top: 10px;
+                align-items: center;
+                border-top: 1px solid $lighti;
+                justify-content: space-around;
+
+                a {
+                    text-decoration: none;
+                    color: $dark;
+                    border-radius: 5px;
+                    padding: 8px;
+                    border: 1px solid $secondary;
+
+                }
+            }
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            transition: all 0.2s ease-in;
+        }
+    }
+}
+
+.projects.active {
+    background: $dark;
+
+    .items {
+        .card {
+            box-shadow: none;
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .projects {
+        .items{
+            .card {
+                width: 85%;
+                margin: auto;
+                margin-top: 30px
+            }
+        }
+    }
+}

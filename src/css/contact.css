@@ -1,0 +1,131 @@
+@font-face {
+  font-family: main;
+  src: url("../assets/fonts/Comfortaa.ttf");
+}
+
+@font-face {
+  font-family: second;
+  src: url("../assets/fonts/Righteous-Regular.ttf");
+}
+
+.contact {
+  padding: 10px;
+}
+
+.contact .title {
+  position: relative;
+}
+
+.contact .title .bar {
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  bottom: -10px;
+  background: #9f98e8;
+}
+
+.contact .form_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .form_content form {
+  width: 500px;
+  height: 100%;
+  padding: 10px;
+  margin: auto;
+}
+
+.contact .form_content form .form_group {
+  margin-bottom: 15px;
+}
+
+.contact .form_content form .form_group input, .contact .form_content form .form_group textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+.contact .form_content form .form_group textarea {
+  height: 100px;
+}
+
+.contact .form_content form .form_group input:focus, .contact .form_content form .form_group textarea:focus {
+  border-color: #9f98e8;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.contact .form_content form .btn {
+  padding: 10px 40px;
+  background: #9f98e8;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .form_content form .btn .circle {
+  margin-left: 10px;
+}
+
+.contact .form_content form .btn:active {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contact .form_content .right {
+  width: 50%;
+  background: linear-gradient(260deg, #9f98e8, #9ee2bd);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .form_content .right img {
+  width: 80%;
+}
+
+.contact.active {
+  color: #fff;
+  background-color: #333;
+}
+
+.contact.active .form_content .right {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9ee2bd), to(#169c94));
+  background: linear-gradient(180deg, #9ee2bd, #169c94);
+}
+
+@media screen and (max-width: 600px) {
+  .contact .form_content {
+    display: block;
+  }
+  .contact .form_content form {
+    width: 80%;
+    margin: auto;
+  }
+  .contact .form_content .right {
+    width: 90%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

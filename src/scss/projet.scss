@@ -1,0 +1,174 @@
+@import 'config';
+
+.projet.active {
+    background: linear-gradient(90deg,#0e1c1b,#28273b);
+}
+
+.projet {
+    padding: 5px;
+    font-family: $font;
+
+    .title {
+        position: relative;
+        h2 {
+            padding-left: 20px;
+        }
+        .tire {
+            position: absolute;
+            width: 100px;
+            bottom: -10px;
+            left: 20px;
+            background-color: $other;
+            height: 2px;
+        }
+    }
+    background-color: $light;
+    .items {
+        display: flex;
+        width: 100%;
+        justify-content:center;
+        align-items: center;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        
+
+        .card {
+            width: 280px;
+            background-color: $white;
+            margin-left: 25px;
+            border-radius: 10px;
+            font-family: $font;
+            overflow: hidden;
+            box-shadow: 1px 10px 10px $lighti;
+
+            .img {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $lighti;
+                img{
+                    width: 100%;
+                }
+            }
+            .body {
+                width: 100%;
+                padding: 5px;
+
+                p {
+                    color: #3339;
+                }
+
+                .tech {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .tech_item {
+                        padding: 6px;
+                        background-color: $other;
+                        margin-right: 10px;
+                        border-radius: 5px;
+
+                        span {
+                            color: $white;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .foot {
+                width: 100%;
+                padding: 8px;
+                padding-bottom: 10px;
+                display: flex;
+                margin-top: 10px;
+                align-items: center;
+                border-top: 1px solid $lighti;
+                justify-content: space-around;
+
+                a {
+                    text-decoration: none;
+                    color: $dark;
+                    border-radius: 5px;
+                    padding: 8px;
+                    border: 1px solid $secondary;
+
+                }
+            }
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            transition: all 0.2s ease-in;
+        }
+    }
+
+    .link{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .plus {
+            padding: 8px 10px;
+            color: $dark;
+            text-decoration: none;
+            border: 1px solid $primaryColor;
+            margin-bottom: 10px;
+        }
+        .plus:hover {
+            background: $primaryColor;
+            transition: all 0.3s ease;
+            color: $white;
+            border-radius: 2px;
+        }
+    }
+}
+
+.projet.active {
+    background-color: $dark;
+    color: #fff;
+
+    .items {
+        .card {
+            background-color: $dark;
+            color: $white;
+            box-shadow: none;
+
+            .body {
+                p {
+                    color: #fff9;
+                }
+            }
+            .foot {
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .link {
+        padding-bottom: 20px;
+        .plus {
+            color: $white;
+
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .projet {
+        padding-bottom: 20px;
+        .items {
+            display: block;
+
+            .card {
+                width: 80%;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

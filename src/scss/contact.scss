@@ -1,0 +1,101 @@
+@import 'config';
+.contact {
+    padding: 10px;
+    .title{
+        position: relative;
+        .bar {
+            width: 100px;
+            height: 2px;
+            position: absolute;
+            bottom: -10px;
+            background: $secondary;
+        }
+
+    }
+    .form_content {
+        display: flex;
+
+        form { 
+            width: 500px;
+            height: 100%;
+            padding: 10px;
+            margin: auto;
+            .form_group {
+                margin-bottom: 15px;
+                input, textarea {
+                    width: 100%;
+                    margin-top: 5px;
+                    padding: 10px;
+                    outline: none;
+                    border-radius: 5px;
+                    border: 1px solid $dark
+                };
+                textarea{
+                    height: 100px;
+                }
+                input:focus,textarea:focus{
+                    border-color: $secondary;
+                    transition: all 0.2s ease;
+                }
+            }
+            .btn {
+                padding: 10px 40px;
+                background: $secondary;
+                border: none;
+                color: $white;
+                border-radius: 5px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+
+                .circle {
+                    margin-left: 10px;
+                }
+            }
+            .btn:active {
+                transition: all 0.5s ease;
+                transform: scale(1.1);
+            }
+        }
+
+        .right {
+            width: 50%;
+            background: linear-gradient(260deg,$secondary,$primaryColor);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.contact.active {
+   color: #fff;
+   background-color: $dark;
+
+   .form_content {
+        .right {
+            background:linear-gradient(180deg,$primaryColor,$other);
+        }
+   }
+}
+
+@media screen and (max-width:600px){
+    .contact {
+        .form_content {
+            display: block;
+
+            form {
+                width: 80%;
+                margin: auto;
+            }
+            .right {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}
