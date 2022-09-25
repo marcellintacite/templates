@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6726575a.css",
+    "main.js": "/static/js/main.70eab472.js",
+    "static/media/mapenzi.png": "/static/media/mapenzi.75ac1d83c529fd88a08c.png",
+    "static/media/rss.png": "/static/media/rss.1ada2c4ccf744f664ffe.png",
+    "static/media/marcytube.png": "/static/media/marcytube.55ed75189d48de42d89c.png",
+    "static/media/ufahamu.png": "/static/media/ufahamu.af7a75c445d12132ef02.png",
+    "static/media/emarket.png": "/static/media/emarket.d2bc57e6956532f33ade.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/dash.png": "/static/media/dash.ddd7d93bfd0458978d42.png",
+    "static/media/marcy.png": "/static/media/marcy.bb7f9cc44da05c2b20f8.png",
+    "static/media/audi.png": "/static/media/audi.2060d9ca2172ca672b8a.png",
+    "static/media/conact.png": "/static/media/conact.876b87d56fb2ffd4f825.png",
+    "static/media/Comfortaa.ttf": "/static/media/Comfortaa.4d2ab5de91c4d193a69f.ttf",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/cv.pdf": "/static/media/cv.3348a98b66382ff2eb7a.pdf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/l.png": "/static/media/l.1008b6b6602397f764ff.png",
+    "service-worker.js": "/service-worker.js",
+    "static/media/Righteous-Regular.ttf": "/static/media/Righteous-Regular.fd0110471f2228c1808a.ttf",
+    "index.html": "/index.html",
+    "main.6726575a.css.map": "/static/css/main.6726575a.css.map",
+    "main.70eab472.js.map": "/static/js/main.70eab472.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6726575a.css",
+    "static/js/main.70eab472.js"
+  ]
+}
